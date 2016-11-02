@@ -151,6 +151,9 @@
 <circle cx="730" cy="340" r="30" fill="green">
 
 </circle>
+<line x1="730" y1="340" x2="710" y2="330" stroke="red" stroke-width="5">
+
+</line>
 <line x1="730" y1="340" x2="600" y2="370" stroke="green" stroke-width="10">
 
 </line>
@@ -160,7 +163,8 @@
 <circle cx="610" cy="360" r="15" fill="green">
 
 </circle>
-<polyline points="690 353 687 357 684 354 681 358" stroke="white" stroke-width="3">
+<polyline points="690 353.25 687 357.25 684 354.5 681 358.5 678 355.75 675 359.75 672 357 669 361 666 358.25 663 362.25 660 359.5 657 363.5
+654 361.75 651 365 648 362 645 367.25 642 363.25 639 367.5 636 364.5 633 368.75 630 365.75 627 370" stroke="white" stroke-width="3">
 
 </polyline>
 
@@ -250,31 +254,38 @@
 
   </line>
   <line x1="640" y1="420" x2="610" y2="360" stroke="green" stroke-width="5">
-
   </line>
   <line x1="610" y1="360" x2="600" y2="345" stroke="green" stroke-width="5">
-
+<animate id="groovement" attributeName="y2" from="345" to="340" dur="2s" begin="click"/>
+<animate attributeName="y2" from="345" to="335" dur="2s" begin="groovement.end"/>
   </line>
   <line x1="600" y1="345" x2="580" y2="335" stroke="green" stroke-width="5">
-
+<animate attributeName="y2" from="335" to="325" dur="2s" begin="groovement.end"/>
   </line>
   <line x1="610" y1="360" x2="585" y2="345" stroke="green" stroke-width="5">
-
+<animate id="hoovement" attributeName="y2" from="345" to="340" dur="2s" begin="click"/>
+<animate attributeName="y2" from="345" to="335" dur="2s" begin="hoovement.end"/>
   </line>
   <line x1="585" y1="345" x2="565" y2="345" stroke="green" stroke-width="5">
-
+<animate attributeName="y2" from="345" to="335" dur="2s" begin="hoovement.end"/>
   </line>
   <line x1="610" y1="360" x2="575" y2="355" stroke="green" stroke-width="5">
-
+<animate id="provement" attributeName="y2" from="355" to="350" dur="2s" begin="click"/>
+<animate attributeName="y2" from="355" to="345" dur="2s" begin="provement.end"/>
   </line>
   <line x1="575" y1="355" x2="555" y2="355" stroke="green" stroke-width="5">
-
+<animate attributeName="y2" from="355" to="345" dur="2s" begin="provement"/>
   </line>
+
+
+<image x="600" y="600" width="20" height="20" xlink:href="http://www.hostgator.com/blog/~/tmp/wp-uploads/2010/11/ninja-257x300.png">
+<animate attributeName="x" from="600" to="200" dur="3s"/>
+</image>
+
+
 
 
 </svg>
-
-
 <body>
 
 </HTML>
