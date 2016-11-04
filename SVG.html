@@ -1,9 +1,18 @@
 <HTML>
+  <link rel="stylesheet" type="text/css" href="SVG.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
 <head>
+
 </head>
 
 <body>
-<h>The WAR Of The GWAN</h>
+<h1>The WAR Of The GWAN</h1>
+<p> In the year 2025, Hostgator has become more powerful than ever. It has absorbed Github, Backendless, SourceTree, Unity, Netbeans,
+Atom, App Wiki, the App Academy Site, PHS website, and millions more. Sean Dow Miller tried to warn them, but they didn't listen.
+Devin Inc was at an all time high, the clone business was booming, machines were too unpredictable and have already tried to take over
+the world in the year 2020 but Devin Inc's military force came in and saved the day. Devin, the direct of Devin Incorporated, never
+expected a 70 foot tall beast of reptilainne being to attack, but he was ready, he sold military clones to the military so he had
+ a supply of top notch military weaponry.</p>
   <svg width="100%" viewBox="0 0 900 600" style="background-color: lightskyblue">
    <!-- building --><line x1="50" y1="600" x2="50" y2="470" stroke="gray" stroke-width="40"/>
  <!-- Windows --><rect width="5" height="5" x="50" y="475" fill="yellow"/>
@@ -295,13 +304,15 @@
 </circle>
 <rect width="5" height="30" x="200" y="310" fill="gray">
 <animate attributeName="y" from="310" to="280" dur="2s" begin="2s"/>
+<animate attributeName="y" from="280" to="280" dur="1s" fill="freeze" begin="tall.end"/>
 </rect>
 <ellipse cx="200" cy="340" rx="25" ry="30" fill="tan"/>
 <ellipse cx="190" cy="330" rx="7" ry="5" fill="white"/>
 <ellipse cx="210" cy="330" rx="7" ry="5" fill="white"/>
 <ellipse cx="200" cy="310" rx="25" ry="10" fill="black">
-<animate attributeName="cy" from="310" to="280" dur="2s" begin="2s"/>
-<animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 210 280" to="360 210 280" dur="2s" begin="3s" repeatCount="indefinite"/>
+<animate id="tall" attributeName="cy" from="310" to="280" dur="2s" begin="2s"/>
+<animate id="tall" attributeName="cy" from="280" to="280" dur="1s" fill="freeze" begin="tall.end"/>
+<animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 200 280" to="360 200 280" dur="2s" begin="tall.end" repeatCount="indefinite"/>
 </ellipse>
 <ellipse cx="170" cy="335" rx="10" ry="25" fill="black"/>
 <rect width="20" height="20" x="192" y="350" fill="black"/>
